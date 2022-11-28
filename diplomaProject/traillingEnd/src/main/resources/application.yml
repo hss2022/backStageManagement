@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: trailingEnd
+    #数据库的配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/diploma?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC&allowMultiQueries=true
+    username: root
+    password: 123456
+    #mybatisplus的日志和数据库中表前缀配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-prefix:
